@@ -1,0 +1,258 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    font-family: 'outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 580px;
+    height: 400px;
+    max-width: 580px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.left {
+    background-color: #6743FF;
+    width: 290px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+}
+
+.left h4 {
+    padding-top: 25px;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.circle {
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsla(256, 72%, 46%, 1) 100%);
+    border-radius: 9999px;
+    width: 130px;
+    height: 130px;
+    margin: 30px auto 0;
+}
+
+.txt {
+    padding-top: 25px;
+}
+
+.compteur {
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    animation: count 2s ease-in-out;
+}
+
+@keyframes count {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+.txt p {
+    color: #D9D4FF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.left h2 {
+    color: white;
+}
+
+#caption {
+    color: hsl(241, 100%, 89%);
+    font-size: 13px;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.left h2 {
+    margin-top: 20px;
+}
+
+.rigth {
+    background-color: #fff;
+    width: 290px;
+    border-radius: 15px;
+}
+
+.rigth h4 {
+    margin: 25px 25px;
+}
+
+
+
+
+button {
+    padding: 10px 70px;
+    border-radius: 30px;
+    background-color: #303B59;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 45px;
+}
+
+button:hover {
+    background-color:hsl(241, 81%, 54%);
+}
+
+.score {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 25px 25px;
+    width: 220px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.score1 {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+.score2 {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+.score3 {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+.score4 {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+
+
+.score:last-of-type {
+    margin-bottom: 40px;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    margin-right: auto;
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+    margin-right: auto;
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+    margin-right: auto;
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+    margin-right: auto;
+}
+
+.score img {
+    padding-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.number {
+    color: #939395;
+}
+
+.number span {
+    color: black;
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 610px) {
+    
+    .card {
+        display: block;
+        height: 620px;
+        width: 290px;
+    }
+
+    .left {
+        height: 350px;
+    }
+
+    .left h4 {
+        font-size: 16px;
+        padding-top: 25px;
+    }
+
+    .circle {
+        width: 110px;
+        height: 110px;
+        margin: 10px auto 0;
+    }
+
+    .txt {
+        padding-top: 20px;
+    }
+    
+    .txt h1 {
+        color: hsl(0, 0%, 100%);
+        font-size: 37px;
+    }
+    
+    .txt p {
+        color: #D9D4FF;
+        font-size: 10px;
+    }
+
+    #caption {
+        margin: 20px auto;
+    }
+
+    .rigth {
+        height: 260px;
+    }
+
+    .rigth h4 {
+        margin: 10px 25px;
+        font-size: 16px;
+    }
+
+    .score {
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0px 0px 8px 30px;
+        width: 220px;
+    }
+
+    .score:last-of-type {
+        margin-bottom: 10px;
+    }
+
+}
+
+.digit {
+    animation: count1 2s ease-in-out;
+}
+@keyframes count1 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
